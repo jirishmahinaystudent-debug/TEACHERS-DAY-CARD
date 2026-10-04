@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teachers' Day - Mr. Randy Bello</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">A little thank-you</span>
+        <h1>Teachers' Day Card</h1>
+      </div>
+      <button id="musicToggle" class="music-btn" type="button" aria-pressed="false">
+        ▶ Play Music
+      </button>
+    </header>
+
+    <section class="book-scene" aria-label="Interactive Teachers' Day card">
+      <div class="book">
+        <div class="page-sheet left-page">
+          <div class="paper-decoration">✦</div>
+          <p class="small-label">To a wonderful teacher</p>
+          <h2 id="frontTeacher">MR. RANDY BELLO</h2>
+
+          <div class="portrait-frame">
+            <img id="teacherPhoto" src="assets/teacher-photo.jpg" alt="Teacher photo">
+            <div class="photo-glow"></div>
+          </div>
+
+          <p class="hint">Turn the page to read your message.</p>
+        </div>
+
+        <div class="page-sheet right-page" id="messagePage">
+          <div class="paper-decoration">🌷</div>
+          <p class="small-label">Happy Teachers' Day!</p>
+          <h2 id="messageTitle">Thank you for being an inspiration.</h2>
+
+          <div class="message-box">
+            <p id="messageText">
+              Thank you for teaching, inspiring, and believing in us.
+              You make learning meaningful. ❤️
+            </p>
+          </div>
+
+          <div class="signature">
+            <span>With gratitude,</span>
+            <strong id="frontStudent">JUDY IRISH MAHINAY</strong>
+          </div>
+
+          <button id="closeCard" class="secondary-btn" type="button">↩ Close</button>
+        </div>
+
+        <button id="openCard" class="cover" type="button" aria-label="Open the Teachers' Day card">
+          <span class="cover-flower">🌷</span>
+          <span class="cover-title">Happy<br>Teachers' Day!</span>
+          <span class="cover-name">For MR. RANDY BELLO</span>
+          <span class="cover-line"></span>
+          <span class="cover-open">Click to open</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="customizer">
+      <div class="customizer-head">
+        <div>
+          <span class="eyebrow">Personalize</span>
+          <h2>Customize your card</h2>
+        </div>
+        <span class="status" id="saveStatus">Ready</span>
+      </div>
+
+      <div class="controls">
+        <label>
+          Teacher's name
+          <input id="teacherInput" type="text" value="MR. RANDY BELLO">
+        </label>
+
+        <label>
+          Student's name
+          <input id="studentInput" type="text" value="JUDY IRISH MAHINAY">
+        </label>
+
+        <label class="wide">
+          Message
+          <textarea id="messageInput" rows="4">Thank you for teaching, inspiring, and believing in us. You make learning meaningful. ❤️</textarea>
+        </label>
+
+        <label>
+          Add / change photo
+          <input id="photoInput" type="file" accept="image/*">
+        </label>
+
+        <label>
+          Add / change audio
+          <input id="audioInput" type="file" accept="audio/*">
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="applyBtn" class="primary-btn" type="button">Apply Changes</button>
+        <button id="resetBtn" class="secondary-btn" type="button">Reset</button>
+      </div>
+
+      <audio id="audioPlayer" preload="metadata">
+        <source src="assets/teachers-day-song.mp3" type="audio/mpeg">
+        <source src="assets/teachers-day-song.m4a" type="audio/mp4">
+        Your browser does not support audio playback.
+      </audio>
+
+      <p class="note">
+        The included photo and music are already built into this project. You can replace them anytime using the upload controls above.
+      </p>
+    </section>
+
+    <footer>
+      <p>Made with gratitude for Teachers' Day • HTML • CSS • JavaScript</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
